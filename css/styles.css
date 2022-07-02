@@ -15,7 +15,7 @@
 body {
   font-family: var(--main-font);
   color: var(--main-tx-cl);
-  background-color: var(--gr-bd-cl);
+  background-color: var(--lr-bd-cl);
 }
 /* resets */
 .link {
@@ -78,6 +78,7 @@ body {
 }
 
 /* main */
+
 /* business */
 .business {
     background-color: var(--dr-bd-cl);
@@ -117,6 +118,7 @@ letter-spacing: 0.03em;
 color: var(--main-tx-cl)
 }
 /* about */
+
 .team-subtitle{
     font-family: var(--main-font);
     font-weight: 500;
@@ -131,14 +133,17 @@ color: var(--main-tx-cl)
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: #757575;}
+
+    .team {
+            background-color: var(--gr-bd-cl);
 }
 /* footer*/
 .footer{
     background-color: var(--dr-bd-cl);
 }
 .addrees{
-    font-family: var(--main-tx-cl);
+    font-family: var(--main-font);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -147,6 +152,41 @@ color: var(--main-tx-cl)
 }
 .footer-mail,
 .footer-phone{
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);  
+}
+.footer-logo{
+    color: var(--lr-bd-cl);
 }
 /*portfolio*/
+
+.projects-btn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    color: var(--main-tx-cl);
+    background-color:#F5F4FA;
+}
+.projects-btn:hover,
+.projects-btn:focus{
+    color: var(--lr-bd-cl);
+    background-color: var(--ac-tx-cl);
+}
+/* potrtfolio list */
+.portfolio-img{
+    background-color: #EEEEEE;
+}
+.portfolio-subtitle{
+    font-family: var(--main-tx-cl);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.portfolio-lead{
+    font-family: var(--main-tx-cl);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.67;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
