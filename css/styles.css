@@ -30,7 +30,7 @@ body {
 .btn{
     font-family:var(--main-font);
     font-style: normal;
-    font-weight: 200;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.87; 
     color: var(--lr-bd-cl);
@@ -181,6 +181,12 @@ color: var(--main-tx-cl);
     color: rgba(255, 255, 255, 0.6);  
 }
 .footer-logo{
+        font-family: var(--secondary-font);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19;
+            letter-spacing: 0.03em;
     color: var(--lr-bd-cl);
 }
 /*portfolio*/
