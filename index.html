@@ -116,7 +116,7 @@
       </section>
       <!--наші професіонали-->
       <section class="team">
-        <div class="container">
+        <div class="container container-team">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-iteam">
@@ -127,8 +127,10 @@
                 src="./images/im_photo/photo_4.jpg"
                 alt="Ігор Демяненко"
               />
-              <h3 class="team-subtitle">Ігор Демяненко</h3>
-              <p class="team-job" lang="en">Product Designer</p>
+              <div class="team-wrapper">
+                <h3 class="team-subtitle">Ігор Демяненко</h3>
+                <p class="team-job" lang="en">Product Designer</p>
+              </div>
             </li>
             <li class="team-iteam">
               <img
@@ -138,8 +140,10 @@
                 src="./images/im_photo/photo_6.jpg"
                 alt="Ольга Репина"
               />
-              <h3 class="team-subtitle">Ольга Репина</h3>
-              <p class="team-job" lang="en">Frontend Developer</p>
+              <div class="team-wrapper">
+                <h3 class="team-subtitle">Ольга Репина</h3>
+                <p class="team-job" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-iteam">
               <img
@@ -149,8 +153,10 @@
                 src="./images/im_photo/photo_7.jpg"
                 alt="Микола Тарасов"
               />
-              <h3 class="team-subtitle">Микола Тарасов</h3>
-              <p class="team-job" lang="en">Marketing</p>
+              <div class="team-wrapper">
+                <h3 class="team-subtitle">Микола Тарасов</h3>
+                <p class="team-job" lang="en">Marketing</p>
+              </div>
             </li>
             <li class="team-iteam">
               <img
@@ -160,8 +166,10 @@
                 src="./images/im_photo/photo_5.jpg"
                 alt="Михайло Єрмаков"
               />
-              <h3 class="team-subtitle">Михайло Єрмаков</h3>
-              <p class="team-job" lang="en">UI Designer</p>
+              <div class="team-wrapper">
+                <h3 class="team-subtitle">Михайло Єрмаков</h3>
+                <p class="team-job" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -169,13 +177,15 @@
     </main>
     <!--підвал-->
     <footer class="footer">
-      <div class="container">
+      <div class="container-footer">
         <a href="#" class="footer-logo link"> <span class="web">Web</span>Studio</a>
-        <address class="addrees">
-          м.Київ, вул. Лесі Українки,26
-          <a href="mailto:info@devstudio.com" class="footer-mail link">info@devstudio.com</a>
-          <a href="tel:+380961111111" class="footer-phone link">+380961111111</a>
-        </address>
+        <div class="container-addrees">
+          <address class="addrees">
+            м.Київ, вул. Лесі Українки,26
+            <a href="mailto:info@devstudio.com" class="footer-mail link">info@devstudio.com</a>
+            <a href="tel:+380961111111" class="footer-phone link">+380961111111</a>
+          </address>
+        </div>
       </div>
     </footer>
   </body>

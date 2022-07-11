@@ -32,9 +32,14 @@ p{
 .link {
   text-decoration: none;
   color: currentColor;
+  margin: 0;
+  padding: 0;
 }
 .list {
   list-style: none;
+margin: 0;
+    padding: 0;
+
 }
 /* base styles */
 .section{
@@ -64,26 +69,33 @@ p{
    background-color: var(--lr-bd-cl);
     
 }
-.header-container{
+.container-header{
     display: flex;
     align-items: center;
-    margin-top :32px;
-    margin-bottom: 32 px;
+    margin-top:32px;
+    margin-bottom: 32px;
 }
 .header-logo{
+    display: inline;
    margin-left: 15px;
    margin-right: 93px;
 }
 .header-nav {
     display: flex;
     align-items: center;
+    margin-left: 0;
 
+}
+.header-list:last-child {
+    margin-right: 331px;
 }
 
 
 .header-list{
 display: flex;
 gap: 50px;
+padding-left: 0;
+margin: 0 auto;
 
 }
 
@@ -104,6 +116,7 @@ gap: 50px;
 
 .header-mail{
     margin-right: 50px;
+    text-transform:lowercase;
 }
 .header-phone{
     margin-right: 15px;
@@ -141,21 +154,19 @@ gap: 50px;
 
 /* business */
 .business {
-    width: 1200px;
-    height: 600px;
     margin-bottom: 94px;
     background-color: var(--dr-bd-cl);
     text-align: center;
+    padding-top: 200px;
+        padding-bottom: 200px;
     
 }
 .main-title{
     align-items: center;
-    margin-left:252px;  
-    margin-right:252px; 
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 200px;
-    padding-bottom: 40px;
+    margin: 0;
+   padding-left: 252px;
+   padding-right: 252px;
+   padding-bottom: 30px;
 font-family: inherit;
 font-weight: 900;
 font-size: 44px; 
@@ -185,9 +196,11 @@ border-radius: 4px;
 .features-list {
     display: flex;
     gap: 30px;
+    margin-top: 0;
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 94px;
+    padding-left: 0;
 }
 .features-title{
     margin-top: 0;
@@ -211,29 +224,47 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--text-sm-cl);
 }
-.about-title,
-.team-title{
 
+/* about */
+
+.container-team{
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 94px;
+}
+.team-iteam{
+    flex-basis: calc (100%-3*30рх)/4
+}
+.team-img{
+    display: flex;
+    min-width: 100%;
+    height: auto;}
+.about-title,
+.team-title {
+    gap:30px;
     margin-top: 0;
     margin-bottom: 50px;
-font-family: inherit;
-font-style: normal;
-font-weight: 700;
-font-size: 36px; 
-line-height: 1.16;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--main-tx-cl);
-
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-tx-cl);
 }
-/* about */
+    
 .about-list,
 .team-list{
+    flex-wrap: wrap;
+    margin: 0;
     display: flex;
     gap: 30px;
 }
 
 .team-subtitle{
+    margin-bottom: 10px;
+    margin-top: 0;
     font-family: inherit;
     font-style: normal;
     font-weight: 500;
@@ -244,6 +275,7 @@ color: var(--main-tx-cl);
     text-transform: capitalize;
 }
 .team-job{
+    margin: 0;
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
@@ -251,22 +283,26 @@ color: var(--main-tx-cl);
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--text-sm-cl);
-margin-bottom: 30px;
 }
 
-    .team {
-        width: 1200px;
-        background-color: var(--gr-bd-cl);
-            
+.team-wrapper{
+    text-align: center;
+    background-color: var(--lr-bd-cl);
+    border-top: none;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+    .team {
+        display:flex;
+        background-color: var(--gr-bd-cl);
+            }
 /* footer*/
 .footer{
     background-color: var(--dr-bd-cl);
+    padding-top: 60px;
 }
-.footer-mail,
-.footer-phone,
-.addrees{
-    display: block;
+.container-addrees{ 
+display: block;
 }
 
 .addrees{
@@ -284,7 +320,6 @@ margin-bottom: 30px;
 }
 .footer-logo{
     margin-bottom: 20px;
-    padding-top: 60px;
         font-family: var(--secondary-font);
             font-style: normal;
             font-weight: 700;
