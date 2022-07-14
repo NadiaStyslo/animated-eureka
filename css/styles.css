@@ -20,7 +20,8 @@ body {
 }
 /* resets */
 h1 h2 h3 h3 h4 h5 h6 p {
-  margin: 0;
+margin: 0;  
+padding: 0;
 }
 .link {
   text-decoration: none;
@@ -35,7 +36,6 @@ h1 h2 h3 h3 h4 h5 h6 p {
 }
 /* base styles */
 .section {
-  width: 1200px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -140,11 +140,15 @@ h1 h2 h3 h3 h4 h5 h6 p {
 .business {
   background-color: var(--dr-bd-cl);
   text-align: center;
+}
+
+.container-business{
   padding-top: 200px;
-  padding-bottom: 200px;
+    padding-bottom: 200px;
 }
 .main-title {
   width: 696px;
+  display: flex;
   align-items: center;
   margin: 0;
   margin-left: auto;
@@ -179,6 +183,7 @@ h1 h2 h3 h3 h4 h5 h6 p {
   padding-bottom: 0;
 }
 .features-title {
+  margin: 0;
   margin-bottom: 10px;
   font-family: inherit;
   font-style: normal;
@@ -201,6 +206,7 @@ h1 h2 h3 h3 h4 h5 h6 p {
 }
 
 .features-detalis {
+  margin: 0;
   font-family: inherit;
   font-style: normal;
   font-weight: 270px;
@@ -319,8 +325,21 @@ flex-basis: calc((100%-3*30рх) / 4);
   color: var(--lr-bd-cl);
 }
 /*portfolio*/
-.container-header {
+.header {
   border-bottom: 1px solid #ececec;
+}
+.visually-hidden{
+  position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .projects-btn {
