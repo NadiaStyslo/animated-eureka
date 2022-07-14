@@ -228,9 +228,11 @@ h1 h2 h3 h3 h4 h5 h6 p {
 
 .about-list,
 .team-list {
-  flex-wrap: wrap;
   display: flex;
   gap: 30px;
+}
+.container-team{
+flex-basis: calc((100%-3*30рх) / 4);
 }
 .team-subtitle {
   margin-top: 0;
@@ -256,6 +258,7 @@ h1 h2 h3 h3 h4 h5 h6 p {
 }
 
 .team-wrapper {
+  
   margin-top: 0;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -348,6 +351,7 @@ h1 h2 h3 h3 h4 h5 h6 p {
 
 .container-portfolio {
  display: flex;
+flex-basis: calc((100%-2*30рх) / 3);
     
     
 }
