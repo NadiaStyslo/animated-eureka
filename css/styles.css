@@ -232,7 +232,6 @@ h1 h2 h3 h3 h4 h5 h6 p {
   display: flex;
   gap: 30px;
 }
-
 .team-subtitle {
   margin-top: 0;
   margin-bottom: 10px;
@@ -348,7 +347,9 @@ h1 h2 h3 h3 h4 h5 h6 p {
 /* potrtfolio list */
 
 .container-portfolio {
-  display: flex;
+ display: flex;
+    
+    
 }
 .portfolio-list {
   display: flex;
@@ -358,12 +359,13 @@ h1 h2 h3 h3 h4 h5 h6 p {
 .portfolio-wrapper {
   border: 1px solid #eeeeee;
   padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
 }
 
 .portfolio-subtitle {
+  display: block;
   margin: 0;
   padding-bottom: 4px;
   font-family: var(--main-tx-cl);
