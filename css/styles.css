@@ -140,12 +140,10 @@ padding: 0;
 .business {
   background-color: var(--dr-bd-cl);
   text-align: center;
-}
-
-.container-business{
   padding-top: 200px;
     padding-bottom: 200px;
 }
+
 .main-title {
   width: 696px;
   display: flex;
