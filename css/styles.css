@@ -99,6 +99,10 @@ padding: 0;
   text-align: center;
   text-transform: capitalize;
 }
+.header-mail,
+.header-phone{
+  margin-left: 10px;
+}
 
 .header-mail {
   text-transform: lowercase;
@@ -113,12 +117,13 @@ padding: 0;
 .header-mail:hover,
 .header-mail:focus,
 .header-phone:hover,
-.header-phone:focus {
+.header-phone:focus,
+.mail-item:hover,
+.mail-item:focus {
   color: var(--ac-tx-cl);
 }
-.current {
-  color: var(--ac-tx-cl);
-}
+
+
 /* logo */
 .web {
   color: var(--ac-tx-cl);
@@ -133,11 +138,30 @@ padding: 0;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+.mail-list{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+}
+.mail-item{
+  
+  display: inline-flex;
+  align-items: center;
+  
+}
+.mail-icon{
+  fill: currentColor
+}
+
 
 /* main */
 
 /* business */
 .business {
+  background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), 
+    url(../images/im_photo/fon.jpg);
   background-color: var(--dr-bd-cl);
   text-align: center;
   padding-top: 200px;
