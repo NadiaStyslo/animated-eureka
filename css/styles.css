@@ -20,8 +20,8 @@ body {
 }
 /* resets */
 h1 h2 h3 h3 h4 h5 h6 p {
-margin: 0;  
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 .link {
   text-decoration: none;
@@ -100,11 +100,10 @@ padding: 0;
   text-transform: capitalize;
 }
 .header-mail,
-.header-phone{
+.header-phone {
   display: flex;
   align-items: center;
-    justify-items: center;
- 
+  justify-items: center;
 }
 
 .header-mail {
@@ -124,7 +123,6 @@ padding: 0;
   color: var(--ac-tx-cl);
 }
 
-
 /* logo */
 .web {
   color: var(--ac-tx-cl);
@@ -139,33 +137,28 @@ padding: 0;
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-.mail-list{
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        gap: 50px;
+.mail-list {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  gap: 50px;
 }
 
-
-
-.mail-icon{
+.mail-icon {
   margin-right: 10px;
-  fill: currentColor
+  fill: currentColor;
 }
-
 
 /* main */
 
 /* business */
 .business {
-  background-image: linear-gradient(to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), 
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/im_photo/fon.jpg);
   background-color: var(--dr-bd-cl);
   text-align: center;
   padding-top: 200px;
-    padding-bottom: 200px;
+  padding-bottom: 200px;
 }
 
 .main-title {
@@ -222,10 +215,10 @@ padding: 0;
   justify-content: center;
   gap: 30px;
 }
-.features-icons{
-  background: #F5F4FA;
-    border-radius: 4px;
-    margin-bottom: 30px;
+.features-icons {
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
 .features-item {
   width: 270px;
@@ -241,19 +234,19 @@ padding: 0;
   letter-spacing: 0.03em;
   color: var(--text-sm-cl);
 }
-.features-icons{
+.features-icons {
   display: flex;
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 270px;
-   height: 120px;
+  height: 120px;
 }
-
 
 /* about */
 
 .about-title,
-.team-title {
+.team-title,
+.customers-title {
   margin-top: 0;
   margin-bottom: 50px;
   font-family: inherit;
@@ -271,8 +264,8 @@ padding: 0;
   display: flex;
   gap: 30px;
 }
-.container-team{
-flex-basis: calc((100%-3*30рх) / 4);
+.container-team {
+  flex-basis: calc((100%-3 * 30рх) / 4);
 }
 .team-subtitle {
   margin-top: 0;
@@ -288,6 +281,7 @@ flex-basis: calc((100%-3*30рх) / 4);
 }
 .team-job {
   margin: 0;
+  margin-bottom: 16px;
   font-family: inherit;
   font-style: normal;
   font-weight: 400;
@@ -298,7 +292,6 @@ flex-basis: calc((100%-3*30рх) / 4);
 }
 
 .team-wrapper {
-  
   margin-top: 0;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -312,15 +305,77 @@ flex-basis: calc((100%-3*30рх) / 4);
 .team {
   background-color: var(--gr-bd-cl);
 }
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 80%;
+}
+.social-icons {
+  fill: #afb1b8;
+}
+.social-link:hover,
+.social-link:focus {
+  background: var(--ac-tx-cl);
+}
+.social-icons:hover,
+.social-icons:focus {
+  fill: var(--lr-bd-cl);
+  background: var(--ac-tx-cl);
+}
+/*customers section*/
+.customers-list{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+}
+.customers-icon{
+  fill: rgba(175, 177, 184, 1);
+}
+.customers-link{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border:1px solid rgba(175, 177, 184, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+
+}
+.customers-link:focus,
+.customers-link:hover{
+  border: 1px solid rgba(33, 150, 243, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+.customers-icon:focus,
+.customers-icon:hover{
+ fill: rgba(33, 150, 243, 1);
+
+}
 /* footer*/
 .footer {
   background-color: var(--dr-bd-cl);
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.container-info{
+  display: flex;
+    align-items: center;
+}
 .container-footer {
   display: block;
-  align-items: center;
+  align-items: baseline;
 }
 
 .li-addrees {
@@ -358,22 +413,64 @@ flex-basis: calc((100%-3*30рх) / 4);
   letter-spacing: 0.03em;
   color: var(--lr-bd-cl);
 }
+.join-title{
+  margin: 0;
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: #FFFFFF;
+}
+.conteiner-join{
+  margin-left: 70px;
+  display: block;
+    align-items: center;
+    justify-content: center;
+  
+}
+.conteiners-join{
+  margin-top: 20px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-link{
+  width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 80%;
+    
+}
+.join-link:focus,
+.join-link:hover{
+  background-color: #2196f3;
+}
+.join-icons{
+  fill:var(--lr-bd-cl)
+}
 /*portfolio*/
 .header {
   border-bottom: 1px solid #ececec;
 }
-.visually-hidden{
+.visually-hidden {
   position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-  
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .projects-btn {
@@ -403,11 +500,19 @@ flex-basis: calc((100%-3*30рх) / 4);
 /* potrtfolio list */
 
 .container-portfolio {
- display: flex;
-flex-basis: calc((100%-2*30рх) / 3);
-    
-    
+  display: flex;
+  flex-basis: calc((100%-2 * 30рх) / 3);
 }
+.link-pottfolio{
+  color:var(--main-tx-cl) ;
+  text-decoration: none;
+}
+.portfolio-wrapper:focus,
+.portfolio-wrapper:hover{
+    background-color: var(--ac-tx-cl);
+  
+}
+
 .portfolio-list {
   display: flex;
   grid-gap: 30px;
@@ -416,9 +521,9 @@ flex-basis: calc((100%-2*30рх) / 3);
 .portfolio-wrapper {
   border: 1px solid #eeeeee;
   padding-top: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 }
 
 .portfolio-subtitle {
