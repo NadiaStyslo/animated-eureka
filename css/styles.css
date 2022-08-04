@@ -709,9 +709,10 @@ h1 h2 h3 h3 h4 h5 h6 p {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   padding: 40px;
   width: 528px;
+  height: 581px;
   top: 50%;
   left: 50%;
   background-color: var(--lr-bd-cl);
@@ -866,15 +867,14 @@ fill: var(--ac-tx-cl);
         border-radius: 2px;
 }
 
-.register-checkbox:checked + .span-line{
+.register-checkbox:checked + .span-line {
   
 border: 2px solid var(--ac-tx-cl);
   border-radius: 2px;
   background-color: var(--ac-tx-cl);
 }
-.register-checkbox:checked + .span-line .form-icons{
-fill: var(--lr-bd-cl);
-  opacity: 1;
+.register-checkbox:checked + .span-line .form-icons {
+fill: var(--lr-bd-cl); opacity: 1;
 }
 
 .info-btn{
