@@ -1,0 +1,16 @@
+.footer{
+    background-color: var(--dr-bd-cl);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        &__container{
+        align-items: baseline;
+            width: 1200px;
+            display: flex;
+        }
+}
+.nav-address{
+width: 231px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}

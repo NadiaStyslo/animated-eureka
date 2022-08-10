@@ -1,7 +1,63 @@
-@import './utils/varibles.scss';
-@import './utils/reset.scss';
-@import './utils/placeholder.scss';
+/*utils*/
+@import './utils/base';
+@import './utils/reserts';
+@import './utils/variables';
 
-/*componets*/
-@import './components/header.scss';
-@import './components/nav.scss';
+/*components*/
+@import './components/current';
+@import './components/info-conteiner';
+@import './components/logo';
+@import './components/nav';
+
+/* layor*/
+@import './layor/header';
+@import './layor/business';
+
+/*features*/
+@import './layor/features';
+@import './components/card';
+
+
+/*about*/
+@import './layor/about';
+@import './components/pictures';
+/*team*/
+@import './layor/team';
+@import './components/_social-icon';
+@import './layor/_customers.scss';
+
+/*fotter*/
+@import './layor/fotter';
+/*addres*/
+@import './components/addrees';
+
+/*join*/
+@import './layor/join';
+
+/*form*/
+@import './layor/form';
+@import './components/input';
+
+/*portfolio*/
+@import './layor/projects';
+@import './components/visually-hidden';
+
+/*portfolio-list*/
+@import './layor/portfolio-list';
+@import './components/wrapper-portfolio';
+@import './components/overlay';
+
+/*modal*/
+@import './layor/backdrob';
+@import './layor/modal';
+@import './components/window';
+
+/*register-form*/
+@import './components/register';
+@import './components/text-input';
+@import './components/feadback';
+
+/*checkbox*/
+@import './layor/checkbox';
+/*submit*/
+@import './components/submit';

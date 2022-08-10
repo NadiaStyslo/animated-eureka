@@ -1,0 +1,33 @@
+.biz {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/im_photo/fon.jpg);
+    background-color: var(--dr-bd-cl);
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+&__title {
+    width: 696px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--lr-bd-cl);
+    text-transform: uppercase;
+}
+&__btn{
+min-width: 200px;
+    min-height: 50px;
+    padding: 10px 32px;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+}
+}

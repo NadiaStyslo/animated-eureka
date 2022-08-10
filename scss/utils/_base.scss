@@ -3,20 +3,19 @@ body {
     color: var(--main-tx-cl);
     background-color: var(--lr-bd-cl);
 }
-/* base styles */
-%list{
+.link{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        color: currentColor;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.list{
     display: flex;
         align-items: center;
         justify-content: center;
         gap: 30px;
-}
-%link {
-    align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        color: currentColor;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section {
     padding-top: 94px;

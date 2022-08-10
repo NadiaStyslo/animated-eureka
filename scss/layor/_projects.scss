@@ -1,0 +1,23 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+.projects{
+&__btn{
+margin-bottom: 50px;
+    padding: 6px 22px;
+    font-weight: 500;
+    line-height: 1.63;
+    color: var(--main-tx-cl);
+    background-color: #f5f4fa;
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+&__list{
+gap: 8px;
+}
+&__btn:hover{
+color: var(--lr-bd-cl);
+    background-color: var(--ac-tx-cl);
+}
+}

@@ -1,0 +1,17 @@
+.current__link {
+    color: var(--ac-tx-cl);
+    position: relative;
+
+&::after {
+    bottom: -1px;
+    left:0;
+    position: absolute;
+    content: '';
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: var(--ac-tx-cl);
+    border-radius: 2px;
+    
+}
+}

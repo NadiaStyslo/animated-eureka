@@ -1,0 +1,27 @@
+.logo__web {
+    color: var(--ac-tx-cl);
+    text-transform: capitalize;
+
+}
+
+.logo {
+    text-decoration: none;
+    margin-right: 93px;
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: currentColor;
+}
+.logo__name {
+    display: block;
+    font-family: var(--main-tx-cl);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--lr-bd-cl);
+}

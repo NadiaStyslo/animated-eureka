@@ -227,7 +227,7 @@ transition-duration: 250ms;
 
 /* features */
 /*card*/
-.card__item {
+.card {
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
@@ -269,7 +269,7 @@ transition-duration: 250ms;
   bottom: 0%;
 }
 
-.pictures__overlay {
+.pictures {
   width: 370px;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -399,7 +399,7 @@ transition-duration: 250ms;
   align-items: center;
   justify-content: center;
 }
-.nav__name {
+.logo__name {
   display: block;
   font-family: var(--main-tx-cl);
   font-style: normal;

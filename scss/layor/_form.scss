@@ -1,0 +1,9 @@
+.form{
+display: block;
+    width: 570px;
+    margin-left: 93px;
+    &__group{
+    display: flex;
+        margin-top: 20px;
+    }
+}
