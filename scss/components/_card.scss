@@ -4,6 +4,11 @@
         margin-bottom: 30px;
         width: 270px;
         height: 120px;
+        @media screen and (min-width:480px) {
+                & {
+                    width: 450px;
+                }
+            }
         &__title{
             margin: 0;
                 margin-bottom: 10px;
@@ -12,10 +17,15 @@
                 letter-spacing: 0.03em;
                 color: var(--main-tx-cl);
                 text-transform: uppercase;
-        }
+        @media screen and (min-width:480px) {
+                & {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;}
+            }}
         &__info{
         margin: 0;
-            font-family: inherit;
+            font-family: var(--main-font);
             font-style: normal;
             font-weight: 270px;
             font-size: 14px;

@@ -1,68 +1,80 @@
 body {
-    font-family: var(--main-font);
-    color: var(--main-tx-cl);
-    background-color: var(--lr-bd-cl);
+  font-family: var(--main-font);
+  color: var(--main-tx-cl);
+  background-color: var(--lr-bd-cl);
 }
-.link{
-    display: flex;
-        align-items: center;
-        justify-content: center;
-        color: currentColor;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: currentColor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list{
-    display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
+.list {
+  justify-content: center;
+  gap: 30px;
+  @media screen and (min-width: 1200px) {
+    & {
+      display: flex;
+    }
+  }
 }
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.container {
-
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: 480px) {
+    & {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      padding-top: 94px;
+      padding-bottom: 94px;
+    }
+  }
 }
 
 .title {
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-tx-cl);
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-tx-cl);
+
+  @media screen and (min-width: 480px) {
+    & {
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 1.17;
+     
+    }
+  }
 }
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    color: var(--lr-bd-cl);
-    background-color: var(--ac-tx-cl);
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--lr-bd-cl);
+  background-color: var(--ac-tx-cl);
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
 .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
