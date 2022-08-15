@@ -4,6 +4,12 @@
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
     transition-property: border, border-radius;
+    @media screen and (min-width: 480px) {
+            & {
+                width: 210px;
+            }
+            }
+               
 &--icon{
     fill: rgba(175, 177, 184, 1);
         transition-property: fill;
@@ -19,4 +25,12 @@
 &:focus &--icon {
 fill: var(--ac-tx-cl);
 }
+}
+.company__list {
+    @media screen and (min-width:480px) {
+        & {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
 }

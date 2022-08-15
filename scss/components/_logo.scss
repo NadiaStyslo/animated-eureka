@@ -14,7 +14,13 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: currentColor;
-}
+            font-size: 24px;
+            line-height: 1.17px;
+   
+        }
+    
+     
+            
 .logo__name {
     display: block;
     font-family: var(--secondary-font);   
@@ -22,6 +28,5 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    letter-spacing: 0.03em;
     color: var(--lr-bd-cl);
-}
+    letter-spacing: 0.03em;}
