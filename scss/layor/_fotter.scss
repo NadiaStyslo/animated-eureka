@@ -2,14 +2,26 @@
     background-color: var(--dr-bd-cl);
         padding-top: 60px;
         padding-bottom: 60px;
-        &__container{
+        
+       &__container{/*
         align-items: baseline;
             display: flex;
-        }
+       */ 
+  
 }
-.nav-address{
+.nav__adress{
+    @media screen and (min-width:480px) {
+            & {
+                display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;}
+            }
+   
+        /*
 width: 231px;
     display: block;
     align-items: center;
-    justify-content: center;
-}
+    justify-content: center;*/
+
+}}

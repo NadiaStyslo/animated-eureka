@@ -1,26 +1,45 @@
 .addrees {
   margin-top: 20px;
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 400;
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--lr-bd-cl);
-  &__list {
-    display: block;
-  }
-  &__item {
-    list-style: none;
+  
+  
+ &__list {
+  @media screen and (min-width:480px) {
+      & { text-align: center;}}
+ 
+    
+  /*
+    display: block;*/
+}
+    &__item{
+      @media screen and (min-width:480px) {
+          & {
+            margin-top: 8px;
+            margin-bottom: 8px;
+          }
+      
+          &__item:last-child {
+            margin-bottom: 0;
+          }
+        }
+     
+            /* 
     margin-top: 9px;
     margin-bottom: 9px;
   }
   &__item:last-child {
     margin-bottom: 0;
-  }
+  */}
   &__item--mail,
   &__item--phone{
     color: rgba(255, 255, 255, 0.6);
         text-decoration: none;
-  }
+}
+
 }
