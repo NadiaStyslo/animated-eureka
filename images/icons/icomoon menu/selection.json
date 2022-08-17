@@ -1,0 +1,68 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M204.8 375.475v-68.275h614.4v68.275h-614.4zM204.8 546.125h614.4v-68.25h-614.4v68.25zM204.8 716.8h614.4v-68.275h-614.4v68.275z"
+        ],
+        "attrs": [],
+        "grid": 0,
+        "tags": [
+          "menu"
+        ]
+      },
+      "attrs": [],
+      "properties": {
+        "order": 36,
+        "id": 0,
+        "name": "menu",
+        "prevSize": 32
+      },
+      "setIdx": 0,
+      "setId": 11,
+      "iconIdx": 0
+    }
+  ],
+  "height": 1024,
+  "preferences": {
+    "showGlyphs": false,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false,
+      "autoHost": true
+    },
+    "imagePref": {
+      "prefix": "",
+      "png": false,
+      "useClassSelector": true,
+      "color": 16777215,
+      "bgColor": 2201331,
+      "classSelector": ".icon",
+      "name": "icomoon",
+      "autoHost": true,
+      "height": 32,
+      "columns": 16,
+      "margin": 16,
+      "xaml": false,
+      "addBgColor": false
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16,
+    "quickUsageToken": {
+      "UntitledProject": "Y2M4ZmVlYWI2YmZjYTM2NmMxZjhmMDU3Yzc2NThlOGQjMSMxNjU4MTExMzU2IyMjNDM4ZGU5MDM2MjQw"
+    }
+  }
+}

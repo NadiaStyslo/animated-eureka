@@ -1,4 +1,4 @@
-/*.register{
+.register{
     &__group{
         margin-bottom: 20px;
     }
@@ -24,9 +24,9 @@ fill: var(--ac-tx-cl);
         color: #757575;
         font-weight: 400;
         font-size: 12px;
-        line-height: 14px;
+        line-height: 1.16;
   }
   &__span{
     position: relative;
   }
-}*/
+}

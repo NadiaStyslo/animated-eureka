@@ -1,4 +1,4 @@
-/*.checkbox{
+.checkbox{
 align-items: center;
     justify-content: center;
     gap: 7px;
@@ -7,9 +7,13 @@ align-items: center;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
+@media screen and (min-width: 480px){
+    &{font-size: 12px;
+    line-height: 1.16;}
+}
     &__span{
     position: relative;
         display: inline-block;
@@ -28,6 +32,12 @@ align-items: center;
         font-size: 14px;
             user-select: none;
             text-underline-position: under;
+            @media screen and (min-width: 480px){
+                font-size: 12px;
+            }
+    }
+    &__text--link{
+        color: var(--ac-tx-cl);
     }
 }
 .checkbox__input:checked + .checkbox__span {
@@ -40,4 +50,3 @@ align-items: center;
     fill: var(--lr-bd-cl);
     opacity: 1;
 }
-*/

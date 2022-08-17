@@ -25,6 +25,15 @@
       <div class="container container__header">
         <nav class="nav">
           <a href="#" class="logo logo"> <span class="logo__web">Web</span>Studio</a>
+          <button
+            class="menu__btn btn"
+            type="button"
+            aria-label="кнопка меню"
+            data-menu-open
+          ></button>
+          <svg class="menu__btn--icon" width="24" height="16">
+            <use class="menu__btn--open" href="./images/icons/icons.svg#menu"></use>
+          </svg>
           <ul class="nav__list list">
             <li class="nav-item item">
               <a href="./index.html" class="nav__link current__link link">Студія </a>
@@ -399,7 +408,7 @@
             </ul>
           </address>
         </div>
-        <div class="join">
+        <div class="join section">
           <h3 class="join__title">Приєднуйтеся</h3>
           <ul class="join__list list">
             <li class="join__item item">
@@ -512,6 +521,57 @@
         </form>
       </div>
     </div>
+    <!--modal-menu-->
+    <div class="modal__container" data-menu>
+      <button class="menu__btn btn" type="button" aria-label="кнопка закриття меню" data-menu-close>
+        <svg class="menu__btn--icon" width="19" heigth="19">
+          <use class="menu__btn--icon--closed" href="./images/icons/icons.svg#Vector"></use>
+        </svg>
+      </button>
+      <ul class="mobile__nav list">
+        <li class="mobile__iteam">
+          <a class="mobile-link link">Студія</a>
+        </li>
+        <li class="mobile__iteam">
+          <a class="mobile-link link">Портфоліо</a>
+        </li>
+        <li class="mobile__iteam">
+          <a class="mobile-link link">Контакти</a>
+        </li>
+      </ul>
+      <div class="mobile__contacts">
+        <ul class="mobile__contact list">
+          <li class="mobile__contact--iteam">
+            <a class="mobile__contact link" href="+380441111111" aria-label="+380961111111">
+              +38 044 111 11 11
+            </a>
+          </li>
+          <li class="mail__contact--iteam">
+            <a
+              class="mail__contact link"
+              href="mailto:info@devstudio.com"
+              aria-label="info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile__social list">
+          <li class="mobile__social--iteam">
+            <a href="https://www.instagram.com/" class="mobile__social--link">Instagram</a>
+          </li>
+          <li class="mobile__social--iteam">
+            <a href="https://www.twitter.com/" class="mobile__social--link">twitter</a>
+          </li>
+          <li class="mobile__social--iteam">
+            <a href="https://www.facebook.com/" class="mobile__social--link">facebook</a>
+          </li>
+          <li class="mobile__social--iteam">
+            <a href="https://www.linkedin.com/" class="mobile__social--link">linkedin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

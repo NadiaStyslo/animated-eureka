@@ -1,10 +1,20 @@
-/*.join{
-width: 206px;
+.join{
+@media screen and (min-width: 480px){
+    &{
+        display: block;
+        text-align: center;
+        justify-content: center;
+            align-items: center;
+           
+}
+
+}
+/*width: 206px;
     padding: 0;
     margin-left: 70px;
     display: inline-block;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     &__title{
     margin: 0;
         margin-bottom: 20px;
@@ -16,11 +26,15 @@ width: 206px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #ffffff;
-    }
+   } 
     &__list{
     gap: 10px;
+    @media screen and (min-width: 480px) {
+            & {
+                display: flex;}
     }
-    &__link{
+}
+   &__link{
         width: 44px;
             height: 44px;
             background-color: rgba(255, 255, 255, 0.1);
@@ -33,4 +47,4 @@ width: 206px;
     &__link:focus,
     &__link:hover {background-color: #2196f3;
     }
-}*/
+}

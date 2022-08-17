@@ -1,31 +1,36 @@
 /*utils*/
+@import './utils/variables';
 @import './utils/base';
 @import './utils/reserts';
-@import './utils/variables';
+@import './layor/img';
+/*container*/
+@import './layor/container';
+/*in hiddeden*/
+@import './components/visually-hidden';
 
-/*components*/
 @import './components/current';
-@import './components/info-conteiner';
+/*header*/
+@import './layor/header';
 @import './components/logo';
 @import './components/nav';
+@import './components/info-conteiner';
 
-/* layor*/
-@import './layor/header';
+/*business*/
 @import './layor/business';
-@import './layor/container';
-@import './layor/img';
 
 /*features*/
 @import './layor/features';
 @import './components/card';
 
-
 /*about*/
 @import './layor/about';
 @import './components/pictures';
+
 /*team*/
 @import './layor/team';
 @import './components/_social-icon';
+
+/*customers*/
 @import './layor/_customers.scss';
 
 /*fotter*/
@@ -40,26 +45,33 @@
 @import './layor/form';
 @import './components/input';
 
+/*modal*/
+@import './layor/backdrob';
+@import './layor/modal';
+@import './components/window';
+/*register-form*/
+@import './components/register';
+@import './components/text-input';
+@import './components/feadback';
+/*checkbox*/
+@import './layor/checkbox';
+/*submit*/
+@import './components/submit';
+
+/*components*/
+@import './components/mobile-nav';
+@import './components/menu-btn';
+
 /*portfolio*/
 @import './layor/projects';
-@import './components/visually-hidden';
 
 /*portfolio-list*/
 @import './layor/portfolio-list';
 @import './components/wrapper-portfolio';
 @import './components/overlay';
 
-/*modal*/
-@import './layor/backdrob';
-@import './layor/modal';
-@import './components/window';
 
-/*register-form*/
-@import './components/register';
-@import './components/text-input';
-@import './components/feadback';
 
-/*checkbox*/
-@import './layor/checkbox';
-/*submit*/
-@import './components/submit';
+
+
+

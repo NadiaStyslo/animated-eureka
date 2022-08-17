@@ -1,0 +1,20 @@
+.menu__btn{
+display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    
+width: 40px;
+    height: 40px;
+    padding: 0;
+    color: var(--main-tx-cl);
+    background-color: var(--lr-bd-cl);
+        border: none;
+
+
+&--icon--closed{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+}}
+   
