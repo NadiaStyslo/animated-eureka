@@ -27,13 +27,14 @@
     letter-spacing: 0.06em;
     color: var(--lr-bd-cl);
     text-transform: uppercase;
-    /*
-    width: 696px;
-    display: flex;
-    font-size: 44px;
-    line-height: 1.36;
-    
-*/
+    @media screen and (min-width: 1200px){
+      &{
+width: 696px;
+  display: flex;
+  font-size: 44px;
+  line-height: 1.36;
+      }
+    }
     @media screen and (max-width: 1199px) {
       & {
         max-width: 360px;

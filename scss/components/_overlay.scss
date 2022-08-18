@@ -1,4 +1,4 @@
-/*.overlay{
+.overlay{
 position: absolute;
     top: 0;
     left: 0;
@@ -15,7 +15,17 @@ position: absolute;
     }
     &__element--img{
         display: block;
+        @media screen and (min-width: 480px) {
+                & {
+                   width: 450px;
+                   height: 294px;
+                }
     }
+@media screen and (min-width: 480px) {
+    & {
+        width: 354px;
+        height: 440px;
+    }}}
     &__text{
         padding: 64px 23px;
         font-family: var(--main-font);
@@ -31,4 +41,4 @@ position: absolute;
  .portfolio__item--link:hover & {
      transform: translate(0);
 }
-}*/
+}

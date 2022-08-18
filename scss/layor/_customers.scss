@@ -1,39 +1,49 @@
 .company__link {
-    width: 170px;
-    height: 92px;
-    border: 1px solid rgba(175, 177, 184, 1);
-    border-radius: 4px;
-    transition-property: border, border-radius;
-    @media screen and (min-width: 480px) {
-            & {
-                width: 210px;
-            
-            }
-            
-            }
-               
-&--icon{
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  transition-property: border, border-radius;
+  @media screen and (min-width: 480px) {
+    & {
+      width: 210px;
+    }
+  }
+  @media screen and (min-width: 480px) {
+    & {
+      width: 226px;
+    }
+  }
+
+  &--icon {
     fill: rgba(175, 177, 184, 1);
-        transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-&:hover,
-&:focus{
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover,
+  &:focus {
     border: 1px solid rgba(33, 150, 243, 1);
-        border-radius: 4px;
-}
-&:hover &--icon,
-&:focus &--icon {
-fill: var(--ac-tx-cl);
-}
+    border-radius: 4px;
+  }
+  &:hover &--icon,
+  &:focus &--icon {
+    fill: var(--ac-tx-cl);
+  }
 }
 .company__list {
-    @media screen and (min-width:480px) {
-        & {
-            display: flex;
-            flex-wrap: wrap;
-
-        }
+  @media screen and (min-width: 480px) {
+    & {
+      display: flex;
+      flex-wrap: wrap;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
 }

@@ -3,26 +3,33 @@
   margin: 0;
   display: flex;
   align-items: center; 
+  @media screen and (min-width: 768px) {
+      & {
+        margin-right: auto;
+      }}
   
-   
   &__list {
     gap: 50px;
-      @media screen and (min-width: 480px) {
+    color: var(--main-tx-c);
+      @media screen and (max-width: 767px) {
           & {
             display: none;
-  }
-      }}
+  }}
+        @media screen and (min-width: 768px) {
+          & {display: flex;}}
+}
+
   &__link {
     padding-top: 32px;
     padding-bottom: 32px;
     text-transform: lowercase;
-    font-family: inherit;
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--text-sm-cl);
+    color: var(--text--cl);
     text-align: center;
     text-transform: capitalize;
     transition-property: color;

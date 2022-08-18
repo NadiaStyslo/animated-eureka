@@ -4,13 +4,17 @@
             text-align: center;
         }
     }
-   
-    /*
+  
 display: block;
-    width: 570px;
+         /*width: 570px;
     margin-left: 93px;*/
     &__group{
         margin-top: 20px;
+        @media screen and (min-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         /*
     display: flex;
         

@@ -1,0 +1,26 @@
+.mobile__social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0;
+  gap: 10px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22px / 18px);
+  &--iteam {
+    &:last-child .mobile__social--link {
+      border-right: none;
+    }
+  }
+  &--link {
+    display: block;
+    color: var(--ac-tx-cl);
+    text-decoration: none;
+    display: block;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    text-decoration: none;
+  }
+}

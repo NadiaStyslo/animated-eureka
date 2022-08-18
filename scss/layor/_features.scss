@@ -1,0 +1,23 @@
+.features {
+  &__list {
+    @media screen and (min-width: 768px) {
+      & {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+    }
+  }
+  &__item {
+    @media screen and (min-width: 480px) {
+      & {
+        width: 450px;
+      }
+    }
+    @media screen and (min-width: 768px) {
+      & {
+        width: 354px;
+      }
+    }
+  }
+}
