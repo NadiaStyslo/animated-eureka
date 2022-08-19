@@ -4,17 +4,19 @@
         display: block;
         text-align: center;
         justify-content: center;
-            align-items: center;
-           
+            align-items: center;          
 }
-
 }
-/*width: 206px;
+ @media screen and (min-width: 1200px) {
+     & {
+width: 206px;
     padding: 0;
     margin-left: 70px;
-    display: inline-block;
+display: inline-block;
     justify-content: center;
-    align-items: center;*/
+    align-items: center;
+     }
+    }
     &__title{
     margin: 0;
         margin-bottom: 20px;
@@ -26,7 +28,9 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #ffffff;
-   } 
+        @media screen and (min-width: 1200px) {
+                & {text-align: left;}
+   } }
     &__list{
     gap: 10px;
     @media screen and (min-width: 480px) {
