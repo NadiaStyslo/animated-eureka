@@ -1,19 +1,14 @@
 .header {
-    border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
-.projects{
-    @media screen and (min-width:480px) {
-    padding-left: 15px;
-    padding-right: 15px;
+.projects {
+  &__item:last-child .projects__btn {
+    @media screen and (min-width: 480px) {
+      margin-bottom: 40px;
     }
-        &__item:last-child .projects__btn {
-            @media screen and (min-width:480px) {
-                margin-bottom: 40px;
-            }
-        }
-&__btn{
-
-padding: 6px 22px;
+  }
+  &__btn {
+    padding: 6px 22px;
     font-weight: 500;
     line-height: 1.63;
     color: var(--main-tx-cl);
@@ -22,27 +17,27 @@ padding: 6px 22px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-
- @media screen and (min-width: 1200px) {
-     & {
-margin-bottom: 50px;}}
-     }
-&__list{
-gap: 8px;
-@media screen and (min-width:480px) {
-        display: flex;
-       flex-wrap: wrap;
-       justify-content: left;
-
-}
-@media screen and (min-width:768px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-}
-&__btn:hover{
-color: var(--lr-bd-cl);
+    @media screen and (min-width: 1200px) {
+      & {
+        margin-bottom: 50px;
+      }
+    }
+  }
+  &__list {
+    gap: 8px;
+    @media screen and (min-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: left;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__btn:hover {
+    color: var(--lr-bd-cl);
     background-color: var(--ac-tx-cl);
-}
+  }
 }

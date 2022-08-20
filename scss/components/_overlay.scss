@@ -9,11 +9,24 @@ position: absolute;
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &__text {
+        
+            padding: 64px 23px;
+            font-family: var(--main-font);
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.03em;
+            margin: 0;
+            color: var(--lr-bd-cl);
+            background-color: var(--ac-tx-cl);
+        }
     &__element{
         position: relative;
             overflow: hidden;
     }
-    &__element--img{
+   &__element--img{
         display: block;
         @media screen and (min-width: 480px) {
                 & {
@@ -26,24 +39,13 @@ position: absolute;
         width: 354px;
         height: 294px;
     }}
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     & {
         width: 370px;
         height: 294px;
     }
 }}
-    &__text{
-        padding: 64px 23px;
-        font-family: var(--main-font);
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 28px;
-        letter-spacing: 0.03em;
-        margin: 0;
-        color: var(--lr-bd-cl);
-        background-color: var(--ac-tx-cl);
-    }
+   
  .portfolio__item--link:hover & {
      transform: translate(0);
 }

@@ -1,21 +1,49 @@
 .biz {
   text-align: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--dr-bd-cl);
 
-
-
-  /*
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/im_photo/fon.jpg);
-    background-color: var(--dr-bd-cl);
-    
-    padding-top: 200px;
-    padding-bottom: 200px;
-    */
   @media screen and (min-width: 480px) {
     & {
-        background-color: aqua;
       padding-top: 118px;
       padding-bottom: 198px;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/im_photo/header/img@1x_sm.jpg);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(/images/im_photo/header/img@2x_sm.jpg);
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    & {
+      padding-top: 118px;
+      padding-bottom: 198px;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/im_photo/header/img@1x_md.jpg);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(/images/im_photo/header/img@2x_md.jpg);
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    & {
+      padding-top: 200px;
+      padding-bottom: 200px;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/im_photo/header/Img@1x_lg.jpg);
+
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(/images/im_photo/header/Img@2x_lg.jpg);
+      }
     }
   }
 
@@ -27,12 +55,12 @@
     letter-spacing: 0.06em;
     color: var(--lr-bd-cl);
     text-transform: uppercase;
-    @media screen and (min-width: 1200px){
-      &{
-width: 696px;
-  display: flex;
-  font-size: 44px;
-  line-height: 1.36;
+    @media screen and (min-width: 1200px) {
+      & {
+        width: 696px;
+        display: flex;
+        font-size: 44px;
+        line-height: 1.36;
       }
     }
     @media screen and (max-width: 1199px) {
@@ -45,12 +73,12 @@ width: 696px;
     }
   }
   &__btn {
-        padding: 10px 32px;
-        margin: 0 auto;
-        text-align: center;
-        letter-spacing: 0.06em;
-            border: none;
-min-width: 200px;
+    padding: 10px 32px;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: none;
+    min-width: 200px;
     min-height: 50px;
   }
 }
