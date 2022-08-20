@@ -9,6 +9,8 @@
        margin-bottom: 63px;
     
        &--link{
+        display: flex;
+        justify-content: flex-start;
         color: var(--ac-tx-cl);
         margin-bottom: 32px;
        }

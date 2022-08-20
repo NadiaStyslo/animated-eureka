@@ -14,7 +14,11 @@
 }
 .mobile {
   margin-bottom: auto;
-
+  &__link{
+    text-decoration: none;
+    color: var(--main-tx-cl);
+  
+  }
   &__iteam {
     display: flex;
     font-family: var(--main-font);
@@ -35,3 +39,6 @@
     }
   }
 }
+ .current {
+  color: var(--ac-tx-cl);
+ }
