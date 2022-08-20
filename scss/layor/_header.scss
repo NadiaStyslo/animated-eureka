@@ -2,26 +2,26 @@
   background-color: var(--lr-bd-cl);
 }
 .container__header {
+  display: flex;
+    align-items: center;
+  position: relative;
   @media screen and (min-width: 1200px) {
     & {
       display: flex;
       justify-content: space-between;
-      padding-top: 24px;
+      
       padding-bottom: 0;
     }
   }
-
+ @media screen and (min-width: 768px) {
+   & {
+    
+     padding-bottom: 0;
+     display: flex;
+   }
+ }
   @media screen and (min-width: 480px) {
-    & {
-      padding-top: 16px;
-      padding-bottom: 16px;
-    }
+   
   }
-  @media screen and (min-width: 768px) {
-    & {
-      padding-top: 26px;
-      padding-bottom: 0;
-      display: flex;
-    }
-  }
+ 
 }
