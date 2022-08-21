@@ -1,15 +1,21 @@
 .footer {
   background-color: var(--dr-bd-cl);
-    @media screen and (max-width: 767px)  {
-        & {padding-top: 60px;}
-    }
-  @media screen and (min-width: 1200px) {
+   
+        padding-top: 60px;
+        padding-bottom: 60px;
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+          padding-top: 0;
+        }
+    
+  &__container {
+    @media screen and (min-width: 1200px) {
       & {
         display: flex;
         align-items: baseline;
+        width: 1200px;
       }
     }
- 
+  }
   &__nav {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       & {

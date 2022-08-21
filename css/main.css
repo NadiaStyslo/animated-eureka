@@ -857,20 +857,23 @@ h1 h2 h3 h3 h4 h5 h6 p {
 /*fotter*/
 .footer {
   background-color: var(--dr-bd-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer {
-    padding-top: 60px;
+    padding-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer {
+  .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    width: 1200px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
