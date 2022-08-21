@@ -1,13 +1,7 @@
 .form {
   display: block;
-  @media screen and (max-width: 767px) {
-    & {
-      text-align: center;
-    }
-  }
   @media screen and (min-width: 1200px) {
     & {
-      
       margin-left: 93px;
     }
   }
@@ -21,17 +15,19 @@
   }
   &__group {
     margin-top: 20px;
-    @media screen and (max-width: 1199px) {
-      & {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    }
+      @media screen and (max-width: 1199px) {
+          & {
+            display: flex;
+          align-items: center;
+          flex-direction: column;}
+          }
+   
     @media screen and (min-width: 1200px) {
       & {
-        display: flex;
+     display: flex;
       }
     }
+
   }
 }
+  

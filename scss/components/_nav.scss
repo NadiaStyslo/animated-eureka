@@ -3,11 +3,8 @@
   margin: 0;
   display: flex;
   align-items: center; 
-  @media screen and (min-width: 768px) {
-      & {
         margin-right: auto;
-      }}
-  
+        
   &__list {
     gap: 50px;
     color: var(--main-tx-c);
@@ -38,5 +35,5 @@
   &__link:hover,
   &__link:focus {
     color: var(--ac-tx-cl);
-  }
-      }
+  } }
+      

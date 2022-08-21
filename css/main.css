@@ -334,11 +334,7 @@ h1 h2 h3 h3 h4 h5 h6 p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media screen and (min-width: 768px) {
-  .nav {
-    margin-right: auto;
-  }
+  margin-right: auto;
 }
 .nav__list {
   gap: 50px;
@@ -520,8 +516,8 @@ h1 h2 h3 h3 h4 h5 h6 p {
   .biz {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/im_photo/header/img@1x_lg.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/im_photo/header/img@1x_lg.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/im_photo/header/img@1_lg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/im_photo/header/img@1_lg.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -943,8 +939,19 @@ h1 h2 h3 h3 h4 h5 h6 p {
     text-align: left;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .addrees__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
   }
 }
@@ -954,13 +961,9 @@ h1 h2 h3 h3 h4 h5 h6 p {
     text-align: left;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199px) {
   .addrees__item {
     margin-top: 8px;
-    margin-bottom: 8px;
-  }
-  .addrees__item:last-child {
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -969,27 +972,12 @@ h1 h2 h3 h3 h4 h5 h6 p {
     margin-bottom: 9px;
   }
 }
-.addrees__item__item:last-child {
-  margin-bottom: 0;
-}
 .addrees__item--mail, .addrees__item--phone {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
 /*join*/
-@media screen and (max-width: 767px) {
-  .join {
-    display: block;
-    text-align: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
 @media screen and (min-width: 1200px) {
   .join {
     width: 206px;
@@ -1005,6 +993,14 @@ h1 h2 h3 h3 h4 h5 h6 p {
   }
 }
 .join__title {
+  display: block;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   margin-bottom: 20px;
   font-family: var(--main-font);
@@ -1050,11 +1046,6 @@ h1 h2 h3 h3 h4 h5 h6 p {
 .form {
   display: block;
 }
-@media screen and (max-width: 767px) {
-  .form {
-    text-align: center;
-  }
-}
 @media screen and (min-width: 1200px) {
   .form {
     margin-left: 93px;
@@ -1074,13 +1065,13 @@ h1 h2 h3 h3 h4 h5 h6 p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1440,7 +1431,7 @@ h1 h2 h3 h3 h4 h5 h6 p {
           flex-direction: column;
   padding: 48px 40px;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: var(--lr-bd-cl);
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -1449,6 +1440,13 @@ h1 h2 h3 h3 h4 h5 h6 p {
 }
 
 .mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-bottom: auto;
 }
 .mobile__link {
@@ -1466,11 +1464,7 @@ h1 h2 h3 h3 h4 h5 h6 p {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.02em;
-  margin-bottom: 32px;
   text-decoration: none;
-}
-.mobile__iteam:last-child {
-  margin-bottom: 0;
 }
 .mobile__iteam:hover, .mobile__iteam:focus {
   color: var(--ac-tx-cl);
@@ -1481,7 +1475,12 @@ h1 h2 h3 h3 h4 h5 h6 p {
 }
 
 .mobile__contact {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 34px;
@@ -1490,12 +1489,6 @@ h1 h2 h3 h3 h4 h5 h6 p {
   margin-bottom: 63px;
 }
 .mobile__contact--link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   color: var(--ac-tx-cl);
   margin-bottom: 32px;
 }
@@ -1539,7 +1532,7 @@ h1 h2 h3 h3 h4 h5 h6 p {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .projects__item:last-child .projects__btn {
     margin-bottom: 40px;
   }
@@ -1556,6 +1549,11 @@ h1 h2 h3 h3 h4 h5 h6 p {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .projects__btn {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .projects__btn {
@@ -1612,11 +1610,6 @@ h1 h2 h3 h3 h4 h5 h6 p {
   grid-gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-@media screen and (max-width: 767px) {
-  .portfolio__list {
-    margin-bottom: 30px;
-  }
 }
 .portfolio__item--link {
   color: var(--main-tx-cl);

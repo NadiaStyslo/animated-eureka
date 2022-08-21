@@ -1,12 +1,5 @@
 .join{
-@media screen and (max-width: 767px){
-    &{
-        display: block;
-        text-align: center;
-        justify-content: center;
-            align-items: center;          
-}
-}
+
  @media screen and (min-width: 1200px) {
      & {
 width: 206px;
@@ -18,8 +11,12 @@ display: inline-block;
      }
     }
     &__title{
+        display: block;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
     margin: 0;
-        margin-bottom: 20px;
+        margin-bottom:20px;
         font-family: var(--main-font);
         font-style: normal;
         font-weight: 700;

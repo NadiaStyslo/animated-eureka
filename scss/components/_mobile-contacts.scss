@@ -1,20 +1,19 @@
-.mobile__contact{
-    
-    display: inline-block;
-    font-family: var(--main-font);
-    font-weight: 500;
-        font-size: 34px;
-        line-height: calc(40px / 34px);
-        letter-spacing: 0.02em;
-       margin-bottom: 63px;
-    
-       &--link{
-        display: flex;
+.mobile__contact {
+    display: flex;
         justify-content: flex-start;
-        color: var(--ac-tx-cl);
-        margin-bottom: 32px;
-       }
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40px / 34px);
+  letter-spacing: 0.02em;
+  margin-bottom: 63px;
+
+  &--link {
+    
+    color: var(--ac-tx-cl);
+    margin-bottom: 32px;
+  }
 }
-.mail__contact--link{
-    color: #757575;
+.mail__contact--link {
+  color: #757575;
 }

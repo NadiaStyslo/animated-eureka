@@ -3,7 +3,7 @@
 }
 .projects {
   &__item:last-child .projects__btn {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 40px;
     }
   }
@@ -16,7 +16,11 @@
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+@media screen and (min-width: 768px) {
+    & {
+      margin-bottom: 30px;
+    }
+  }
     @media screen and (min-width: 1200px) {
       & {
         margin-bottom: 50px;
