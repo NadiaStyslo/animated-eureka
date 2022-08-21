@@ -1,18 +1,15 @@
 .footer {
   background-color: var(--dr-bd-cl);
-  
-  padding-bottom: 60px;
-
-  &__container {
-    
-        padding-top: 60px;
-    @media screen and (min-width: 1200px) {
+    @media screen and (max-width: 767px)  {
+        & {padding-top: 60px;}
+    }
+  @media screen and (min-width: 1200px) {
       & {
         display: flex;
         align-items: baseline;
       }
     }
-  }
+ 
   &__nav {
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       & {
@@ -32,7 +29,7 @@
         padding: 0;
       }
     }
-  }
+  }}
   .nav__adress {
     @media screen and (min-width: 1200px) {
       & {
@@ -41,4 +38,4 @@
       }
     }
   }
-}
+

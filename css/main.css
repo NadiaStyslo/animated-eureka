@@ -487,7 +487,7 @@ h1 h2 h3 h3 h4 h5 h6 p {
 @media screen and (max-width: 767px) {
   .biz {
     padding-top: 118px;
-    padding-bottom: 198px;
+    padding-bottom: 118px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/im_photo/header/img@1x_sm.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/im_photo/header/img@1x_sm.jpg);
   }
@@ -501,7 +501,7 @@ h1 h2 h3 h3 h4 h5 h6 p {
 @media screen and (min-width: 768px) {
   .biz {
     padding-top: 118px;
-    padding-bottom: 198px;
+    padding-bottom: 118px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/im_photo/header/img@1x_md.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/im_photo/header/img@1x_md.jpg);
   }
@@ -516,14 +516,14 @@ h1 h2 h3 h3 h4 h5 h6 p {
   .biz {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/im_photo/header/img@1_lg.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/im_photo/header/img@1_lg.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/im_photo/header/mg@1_lg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/im_photo/header/mg@1_lg.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .biz {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/im_photo/header/img@2x_lg.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/im_photo/header/img@2x_lg.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/im_photo/header/mg@2x_lg.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/im_photo/header/mg@2x_lg.jpg);
   }
 }
 .biz__title {
@@ -704,21 +704,6 @@ h1 h2 h3 h3 h4 h5 h6 p {
     gap: 30px;
   }
 }
-@media screen and (min-width: 480px) {
-  .team__iteam {
-    padding-bottom: 24px;
-    margin-bottom: 30px;
-  }
-  .team__iteam:last-child {
-    margin-bottom: 0;
-  }
-}
-@media screen and (min-width: 768px) {
-  .team__iteam {
-    padding: 0;
-    margin: 0;
-  }
-}
 .team__subtitle {
   margin-top: 0;
   margin-bottom: 10px;
@@ -872,13 +857,14 @@ h1 h2 h3 h3 h4 h5 h6 p {
 /*fotter*/
 .footer {
   background-color: var(--dr-bd-cl);
-  padding-bottom: 60px;
 }
-.footer__container {
-  padding-top: 60px;
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-top: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
-  .footer__container {
+  .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -916,8 +902,9 @@ h1 h2 h3 h3 h4 h5 h6 p {
     padding: 0;
   }
 }
+
 @media screen and (min-width: 1200px) {
-  .footer .nav__adress {
+  .nav__adress {
     width: 231px;
   }
 }
