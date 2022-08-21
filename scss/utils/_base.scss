@@ -13,15 +13,22 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .list {
+    display: flex;
+      flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) and (max-width:479px) {
     & {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+        gap: 30px;
     }
   }
 }
 .section {
+  padding-top: 60px;
+    padding-bottom: 60px;
   @media screen and (min-width: 480px) {
     & {
       padding-top: 60px;
